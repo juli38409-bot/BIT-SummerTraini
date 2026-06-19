@@ -1,37 +1,32 @@
-# Question 1: List Append
+
 students = ["Aman", "Priya", "Shalu", "Raj", "Ansh"]
 students.append("Vivek")
 print(students)
 
-# Question 2: Tuple Indexing
 cities = ("Mumbai", "Kanpur", "Delhi", "Lucknow", "Agra")
 print(cities[2])
 
-# Question 3: Set Add
 courses = {"Python", "SQL", "Machine Learning", "Data Analytics"}
 courses.add("AI")
 print(sorted(courses))
 
-# Question 4: Dictionary Access
 student = {
     "name": "Rahul",
     "course": "Python Data AI",
     "batch": "A",
+
     "city": "Delhi"
 }
 print("Name:", student["name"])
 print("Course:", student["course"])
 
-# Question 5: Filter Even Numbers
 numbers = list(range(1, 11))
-even_numbers = [num for num in numbers if num % 2 == 0]
+even_numbers = [n for n in numbers if n % 2 == 0]
 print(even_numbers)
 
-# Question 6: Count Word Frequency
 words = ["python", "ai", "python", "data", "ai", "python"]
 
-frequency = {}
-for word in words:
-    frequency[word] = frequency.get(word, 0) + 1
-
-print(frequency)
+freq = {}
+for w in words:
+    freq[w] = freq.get(w, 0) + 1
+print(freq)
